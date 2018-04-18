@@ -27,12 +27,12 @@ class Film extends Component {
    
       if (this.state.loaded === true) {
       return (
-        <div>
+        <div className='d-flex flex-column'>
         <img
           src="https://ghibliapi.herokuapp.com/images/logo.svg"
           alt="Created by"
         />
-        <button value={this.state.loaded} onClick={this.handleClick}>
+        <button className='w-25' value={this.state.loaded} onClick={this.handleClick}>
           Load Species
         </button>
             {this.state.films.map(film => <FilmCard key={film.id} value={film} />)}

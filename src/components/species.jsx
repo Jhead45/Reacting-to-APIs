@@ -27,12 +27,12 @@ handleClick = () => {
 render() {
   if (this.state.loaded === true) {
     return (
-      <div>
+      <div className='d-flex flex-column'>
       <img
         src="https://ghibliapi.herokuapp.com/images/logo.svg"
         alt="Created by"
       />
-      <button value={this.state.loaded} onClick={this.handleClick}>
+      <button className='w-25' value={this.state.loaded} onClick={this.handleClick}>
         Load Films
       </button>
       {this.state.species.map(species => <SpeciesCard key={species.id} value={species} />)}

@@ -37,12 +37,12 @@ class App extends Component {
               break;
           default:
             return (
-              <div>
-                <img 
+              <div className='d-flex flex-column'>
+                <img
         src="https://ghibliapi.herokuapp.com/images/logo.svg"
         alt="Created by"/><br />
-              <div className="button" onClick={() => this.handleClick()}>Load Films</div><br />
-              <div className="button" onClick={() => this.handleClick2()}>Load Species</div></div>)
+              <button className='w-25' onClick={() => this.handleClick()}>Load Films</button><br />
+              <button className='w-25' onClick={() => this.handleClick2()}>Load Species</button></div>)
       }
 
 
@@ -53,5 +53,4 @@ class App extends Component {
 
 
 export default App;
-
 
