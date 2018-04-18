@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Card = (props) => {
+const FilmCard = (props) => {
 console.log(props);
   
   return (
@@ -17,4 +17,4 @@ console.log(props);
 
 
 
-export default Card;
+export default FilmCard;
